@@ -43,8 +43,7 @@ nav li a:hover {
 /*-------------------------- Hero Image ----------------------- */
 
 .hero-image-home {
-  background: url("https://ac42a0c0-9a8e-4149-b9c6-a9621777190e.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/images/hero-image.jpg") no-repeat center center;
-
+  background: url("../images/hero-image.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
