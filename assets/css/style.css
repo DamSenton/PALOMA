@@ -43,7 +43,7 @@ nav li a:hover {
 /*-------------------------- Hero Image ----------------------- */
 
 .hero-image-home {
-  background: url("../images/hero-image.jpg") no-repeat center center;
+  background: url("images/hero-image.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,10 +122,11 @@ nav li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ 
 }
 
 .main-logo img{
-    height: 35vh;
+    height: 25vh;
     width: 25vw;
 }
 
@@ -135,12 +136,47 @@ nav li a:hover {
   font-family: 'Reem Kufi', sans-serif;
 }
 
+/*------------------------- Block Dividers ------------------*/
+
+.block-divider{
+    width: 75%;
+    height: 0.1px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/*-------------------------- Page Content --------------------- */
+
+
+
+.page-content h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3vmin;
+    text-align: center;
+    color: #fafafa;
+}
+
+.page-content p{
+font-family: 'Montserrat', sans-serif;
+font-size: 2.5vmin;
+text-align: center;
+color: #fafafa;
+}
+
+.USP-content, .promo-content, .masterclass-content{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
 
 /*------------------------- Footer --------------------------- */
 
 
 footer{
-    position: absolute;
+    position: relative;
     bottom:0;
     width: 100%;
     padding-bottom: 10px;
