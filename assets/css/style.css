@@ -21,18 +21,14 @@ body {
 
 nav a {
   color: white !important;
-
+line-height: 25px;
   display: inline;
 }
 
 .nav-logo {
-  background: url("../images/PALOMA_logo.png");
-  width: 6rem;
-  height: 3.5rem;
-  left: 2rem;
-  
-  z-index: 1;
-  position: relative;
+ font-size: 1.6rem;
+ letter-spacing: 3px;
+
 }
 
 nav li a:hover {
@@ -46,6 +42,32 @@ nav li a:hover {
 
 .hero-image-home {
   background: url("../images/hero-image.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+
+  position: relative;
+  z-index: 0;
+}
+
+.hero-image-booking {
+  background: url("../images/book-now-hero.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+
+  position: relative;
+  z-index: 0;
+}
+
+.hero-image-menu {
+  background: url("../images/cocktail-menu.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
