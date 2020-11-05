@@ -430,7 +430,15 @@ div#bar-map {
   -o-transition: 0.9s;
 }
 
-.menu-item > p {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem;
+p {
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.drink-info h2{
+    margin-bottom: 30px;
+}
+
+.drink-info h3{
+    margin-bottom: 30px;
 }
