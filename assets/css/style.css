@@ -8,6 +8,10 @@ body {
   color: #fafafa;
 }
 
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*----------------------- NAV BAR -------------------------- */
 
 .navbar {
@@ -345,14 +349,38 @@ footer ul {
 .booking-form {
   padding: 2rem;
   color: #fafafa;
-
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .form-check {
   margin-bottom: 15px !important;
 }
+
+/*--------------------------- Map ---------------------- */
+
+.map h2{
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+div#bar-map{
+     min-height: 360px;
+     width: 65%;
+     margin: 0 auto;
+     border: 20px solid #272727;  
+}
+
+@media screen and (max-width: 800px) {
+div#bar-map{
+min-height: 250px;
+width: 80%;
+}
+}
+
 
 /*------------------------ Menu ----------------------------- */
 
