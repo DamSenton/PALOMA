@@ -12,6 +12,14 @@
 	</script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
+})();
+</script>
+
 	<title>PALOMA</title>
 </head>
 
@@ -65,19 +73,20 @@
     <section class="booking-form">
  <div class="container">
 
- <form>
+<div class="center-form">
+ <form onsubmit="return sendMail(this);">
  <div class="form-group">
     <label for="exampleFormControlInput1">Full Name</label>
-    <input type="text" class="form-control" id="fullNameInput" placeholder="John Smith">
+    <input type="text" class="form-control" name="name" id="fullNameInput" placeholder="John Smith">
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
   
   <div class="form-group">
     <label for="exampleFormControlSelect2">Number of Guests</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
+    <select multiple class="form-control" name="guests" id="exampleFormControlSelect2">
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -89,8 +98,9 @@
     </select>
   </div>
   <div class="form-group">
+  
     <label for="exampleFormControlTextarea1">Special Requirements</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" name="special_requirements" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -105,7 +115,7 @@
   </div>
 </form>
  </div>
- 
+ </div>
     </section>
  
 	<footer class="mt-auto py-3">
@@ -136,7 +146,7 @@
 			</p>
 		</div>
 	</footer>
-    
+    <script src="assets/scripts/booking-form.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 	</script>
