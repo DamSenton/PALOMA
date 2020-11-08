@@ -7,18 +7,24 @@
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
-})();
-</script>
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function(){
+      emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
+   })();
+	</script>
 
 	<title>PALOMA</title>
 </head>
@@ -70,23 +76,23 @@ emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
 
 	<hr class="block-divider">
 
-    <section class="booking-form">
- <div class="container">
+	<section class="booking-form">
+		<div class="container">
 
-<div class="center-form">
- <form onsubmit="return sendMail(this);">
- <div class="form-group">
-    <label for="exampleFormControlInput1">Full Name</label>
-    <input type="text" class="form-control" name="name" id="fullNameInput" placeholder="John Smith">
+			<div class="center-form">
+				<form onsubmit="return sendMail(this);">
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Full Name</label>
+						<input type="text" class="form-control" name="name" id="fullNameInput" placeholder="John Smith">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Email address</label>
+							<input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
-  
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Number of Guests</label>
-    <select multiple class="form-control" name="guests" id="exampleFormControlSelect2">
+
+							<div class="form-group">
+								<label for="exampleFormControlSelect2">Number of Guests</label>
+								<select multiple class="form-control" name="guests" id="exampleFormControlSelect2">
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -96,28 +102,34 @@ emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
       <option>7</option>
       <option>8</option>
     </select>
+							</div>
+
+                            
+						<div class="form-group">
+							<label for="formDateInput">Date</label>
+							<input type="date" class="form-control" name="date" id="formDateInput">
   </div>
-  <div class="form-group">
-  
-    <label for="exampleFormControlTextarea1">Special Requirements</label>
-    <textarea class="form-control" name="special_requirements" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
+							<div class="form-group">
+
+								<label for="exampleFormControlTextarea1">Special Requirements</label>
+								<textarea class="form-control" name="special_requirements" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck1">
+								<label class="form-check-label" for="gridCheck1">
           I confirm that every member of my party is over the age of 18.
         </label>
-      </div>
-      <div class="form-group">
-    <div class="form-button">
-      <button type="submit" class="btn btn-primary" id="form-button">Confirm Booking</button>
-    </div>
-  </div>
-</form>
- </div>
- </div>
-    </section>
- 
+							</div>
+							<div class="form-group">
+								<div class="form-button">
+									<button type="submit" class="btn btn-primary" id="form-button">Confirm Booking</button>
+								</div>
+							</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
 	<footer class="mt-auto py-3">
 		<div class="footer-container">
 			<ul class="social-media">
@@ -146,10 +158,8 @@ emailjs.init("user_5hQbt2G6SKcnNEsBKvvrw");
 			</p>
 		</div>
 	</footer>
-    <script src="assets/scripts/booking-form.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
+	<script src="../assets/scripts/booking-form.js"></script>
+
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 	</script>
