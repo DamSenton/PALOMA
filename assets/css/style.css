@@ -175,6 +175,20 @@ nav li a:hover {
   color: #fafafa !important;
 }
 
+.back-to-top a{
+   font-family: 'Montserrat', sans-serif;
+    color: #fafafa !important;
+    text-transform: none;
+    margin: 0 auto;
+}
+
+.back-to-top{
+     text-align: center;
+     margin: 25px;
+     font-size: 1.5vmax;
+     display: block;
+}
+
 /*------------------------- Block Dividers ------------------*/
 
 .block-divider {
