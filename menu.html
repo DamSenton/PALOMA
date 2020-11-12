@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-	<title>PALOMA</title>
-</head>
+    <script
+      type="text/javascript"
+      src="assets/scripts/jQuery/jquery-3.5.1.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/scripts/nav-bar-hide.js"
+    ></script>
+    <title>PALOMA</title>
+  </head>
 
-<body class="h-100">
-<a id="page-top"></a>
-	<!------------------------------------Header / Navbar------------------------------------------->
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12">
-			<a class="nav-link nav-logo" href="index.html">PALOMA</a>
+  <body class="h-100">
+    <a id="page-top"></a>
+    <!------------------------------------Header / Navbar------------------------------------------->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12" id="navbar">
+        <a class="nav-link nav-logo" href="index.html">PALOMA</a>
 
-			<button
+        <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -33,199 +51,243 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking-form.html">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-----------------------------------------Hero-image------------------------------------------------------------->
+    <section class="hero-outer">
+      <div class="hero-image-menu">
+        <div class="opaque-overlay"></div>
+      </div>
+      <h1 id="hero-text">MENU</h1>
+    </section>
 
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="menu.html">Menu</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="booking-form.html">Book Now</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<!-----------------------------------------Hero-image------------------------------------------------------------->
-	<section class="hero-outer">
-		<div class="hero-image-menu">
+    <hr class="block-divider" />
 
-
-			<div class="opaque-overlay"></div>
-
-
-		</div>
-		<h1 id="hero-text"> MENU</h1>
-	</section>
-
-	<hr class="block-divider">
-
-	<section class="menu-gallery">
-
-		<div class="menu-item">
-			<img src="assets/css/menu-images/apple-pie-cocktail.jpg" alt="Apple Pie" class="menu-image">
-			<div class="drink-info">
-				<h2>Apple Pie - UK</h2>
-				<h3>Ingredients:</h3>
-				<p>- Tequila</p>
-				<p>- Apple Pie Syrup</p>
-				<p>- Lime</p>
-			</div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/bit-of-me-cocktail.jpg" alt="Bit of Me" class="menu-image">
-			<div class="drink-info">
-            <h2>Bit Of Me - UK</h2>
-            <h3>Ingredients:</h3>
-            <p>- Hendricks Gin</p>
-            <p>- Rhubarb</p>
-            <p>- Strawberry</p>
-            <p>- Soda</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/bueno-cocktail.jpg" alt="Bueno" class="menu-image">
-			<div class="drink-info">
-            <h2>Bueno - UK</h2>
-            <h3>Ingredients:</h3>
-            <p>- Salted Caramel Kahlua</p>
-            <p>- White Chocolate Liqueur</p>
-            <p>- Bueno</p>
-            <p>- Vanilla Ice cream</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/negroni-cocktail.jpg" alt="Negroni" class="menu-image">
-			<div class="drink-info">
-            <h2>Negroni - Italy</h2>
-            <h3>Ingredients:</h3>
-            <p>- Gin</p>
-            <p>- Campari</p>
-            <p>- Vermouth</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/paloma-cocktail.jpg" alt="Paloma" class="menu-image">
-			<div class="drink-info">
-            <h2>Paloma - Mexico</h2>
-            <h3>Ingredients:</h3>
-            <p>- Patron Silver</p>
-            <p>- Lime</p>
-            <p>- Grapefruit Soda</p>
-            <p>- Pinch Of Salt</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/rude-boy-cocktail.jpg" alt="Rude Boy" class="menu-image">
-			<div class="drink-info">
-            <h2>Rude Boy - UK</h2>
-            <h3>Ingredients:</h3>
-            <p>- Absolut Mandarin</p>
-            <p>- Creme de Cassis</p>
-            <p>- Creme de Mure</p>
-            <p>- Orange</p>
-            <p>- Pineapple</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/russian-spring-cocktail.jpg" alt="Russian Spring Punch" class="menu-image">
-			<div class="drink-info">
-            <h2>Russian Spring Punch - Russia</h2>
-            <h3>Ingredients:</h3>
-            <p>- Vodka</p>
-            <p>- Creme de Cassis</p>
-            <p>- Lemon</p>
-            <p>- Champagne</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/strawberry-cocktail.jpg" alt="Strawberry Daiquiri" class="menu-image">
-			<div class="drink-info">
-            <h2>Strawberry Daiquiri - Cuba</h2>
-            <h3>Ingredients:</h3>
-            <p>- White Rum</p>
-            <p>- Lime</p>
-            <p>- Strawberry Syrup</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/tommys-cocktail.jpg" alt ="Tommy's" class="menu-image">
-			<div class="drink-info">
-            <h2>Tommy's - Mexico</h2>
-            <h3>Ingredients:</h3>
-            <p>- Tequila</p>
-            <p>- Lime</p>
-            <p>- Agave Syrup</p>
-            </div>
-		</div>
-		<div class="menu-item ">
-			<img src="assets/css/menu-images/zombie-cocktail.jpg" alt="Zombie" class="menu-image">
-			<div class="drink-info">
-            <h2>Zombie - Cuba</h2>
-            <h3>Ingredients:</h3>
-            <p>- 4 Havana Rums</p>
-            <p>- Maraschino Liqueur</p>
-            <p>- Lime</p>
-            <p>- Pineapple</p>
-            <p>- Pomegranate</p>
-            <p>- Passion Fruit</p>
-            <p>- Angostora Bitters</p>
-            </div>
-		</div>
-
-
-
-
-
-
-	</section>
+    <section class="menu-gallery">
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/apple-pie-cocktail.jpg"
+          alt="Apple Pie"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Apple Pie - UK</h2>
+          <h3>Ingredients:</h3>
+          <p>- Tequila</p>
+          <p>- Apple Pie Syrup</p>
+          <p>- Lime</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/bit-of-me-cocktail.jpg"
+          alt="Bit of Me"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Bit Of Me - UK</h2>
+          <h3>Ingredients:</h3>
+          <p>- Hendricks Gin</p>
+          <p>- Rhubarb</p>
+          <p>- Strawberry</p>
+          <p>- Soda</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/bueno-cocktail.jpg"
+          alt="Bueno"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Bueno - UK</h2>
+          <h3>Ingredients:</h3>
+          <p>- Salted Caramel Kahlua</p>
+          <p>- White Chocolate Liqueur</p>
+          <p>- Bueno</p>
+          <p>- Vanilla Ice cream</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/negroni-cocktail.jpg"
+          alt="Negroni"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Negroni - Italy</h2>
+          <h3>Ingredients:</h3>
+          <p>- Gin</p>
+          <p>- Campari</p>
+          <p>- Vermouth</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/paloma-cocktail.jpg"
+          alt="Paloma"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Paloma - Mexico</h2>
+          <h3>Ingredients:</h3>
+          <p>- Patron Silver</p>
+          <p>- Lime</p>
+          <p>- Grapefruit Soda</p>
+          <p>- Pinch Of Salt</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/rude-boy-cocktail.jpg"
+          alt="Rude Boy"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Rude Boy - UK</h2>
+          <h3>Ingredients:</h3>
+          <p>- Absolut Mandarin</p>
+          <p>- Creme de Cassis</p>
+          <p>- Creme de Mure</p>
+          <p>- Orange</p>
+          <p>- Pineapple</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/russian-spring-cocktail.jpg"
+          alt="Russian Spring Punch"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Russian Spring Punch - Russia</h2>
+          <h3>Ingredients:</h3>
+          <p>- Vodka</p>
+          <p>- Creme de Cassis</p>
+          <p>- Lemon</p>
+          <p>- Champagne</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/strawberry-cocktail.jpg"
+          alt="Strawberry Daiquiri"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Strawberry Daiquiri - Cuba</h2>
+          <h3>Ingredients:</h3>
+          <p>- White Rum</p>
+          <p>- Lime</p>
+          <p>- Strawberry Syrup</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/tommys-cocktail.jpg"
+          alt="Tommy's"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Tommy's - Mexico</h2>
+          <h3>Ingredients:</h3>
+          <p>- Tequila</p>
+          <p>- Lime</p>
+          <p>- Agave Syrup</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img
+          src="assets/css/menu-images/zombie-cocktail.jpg"
+          alt="Zombie"
+          class="menu-image"
+        />
+        <div class="drink-info">
+          <h2>Zombie - Cuba</h2>
+          <h3>Ingredients:</h3>
+          <p>- 4 Havana Rums</p>
+          <p>- Maraschino Liqueur</p>
+          <p>- Lime</p>
+          <p>- Pineapple</p>
+          <p>- Pomegranate</p>
+          <p>- Passion Fruit</p>
+          <p>- Angostora Bitters</p>
+        </div>
+      </div>
+    </section>
 
     <div class="back-to-top">
+      <a class="page-top-button" href="#page-top"
+        ><i class="fas fa-sort-up"></i><br />
+        Back to top
+      </a>
+    </div>
 
-<a class="page-top-button" href="#page-top"><i class="fas fa-sort-up"></i><br/> Back to top </a>
-</div>
-
-	<footer class="mt-auto py-3">
-		<div class="footer-container">
-			<ul class="social-media">
-				<li>
-					<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-				</li>
-				<li>
-					<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-				</li>
-				<li>
-					<a href="https://uk.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
-		</div>
-		<div class="copyright">
-			<p>
-				<small>
+    <footer class="mt-auto py-3">
+      <div class="footer-container">
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://uk.linkedin.com/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube-square"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>
+          <small>
             Copyright Samuel Denton @ The Coding Institute © 2019-2020
           </small>
-			</p>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-</body>
-
-
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
