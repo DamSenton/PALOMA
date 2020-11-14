@@ -46,7 +46,7 @@
   <body class="h-100">
     <a id="page-top"></a>
     <!------------------------------------Header / Navbar------------------------------------------->
-    <header>
+    <header class="nav">
       <nav class="navbar navbar-expand-lg fixed-top col-12" id="navbar">
         <a class="nav-link nav-logo" href="index.html">PALOMA</a>
 
@@ -54,14 +54,14 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
@@ -98,26 +98,27 @@
                 name="name"
                 id="fullNameInput"
                 placeholder="John Smith"
+                required
               />
             </div>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
+              <label for="exampleFormControlInput1">Email Address</label>
               <input
                 type="email"
                 class="form-control"
                 name="email"
                 id="exampleFormControlInput1"
                 placeholder="name@example.com"
+                required
               />
             </div>
 
             <div class="form-group">
-              <label for="exampleFormControlSelect2">Number of Guests</label>
+              <label for="exampleFormControlSelect1">Number of Guests</label>
               <select
-                multiple
                 class="form-control"
+                id="exampleFormControlSelect1"
                 name="guests"
-                id="exampleFormControlSelect2"
               >
                 <option>1</option>
                 <option>2</option>
@@ -137,6 +138,7 @@
                 class="form-control"
                 name="date"
                 id="formDateInput"
+                required
               />
             </div>
             <div class="form-group">
@@ -148,10 +150,16 @@
                 name="special_requirements"
                 id="exampleFormControlTextarea1"
                 rows="3"
+                required
               ></textarea>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1" />
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck1"
+                required
+              />
               <label class="form-check-label" for="gridCheck1">
                 I confirm that every member of my party is over the age of 18.
               </label>

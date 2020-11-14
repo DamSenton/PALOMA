@@ -10,13 +10,13 @@ window.onscroll = function () {
 
   if ($(this).scrollTop() > 50) {
     /*height in pixels when the navbar becomes non opaque*/
-    $("#navbar").addClass("dark-background");
-    $(".nav-link").removeClass("nav-item-black");
-    $(".nav-link").addClass("nav-item-white");
-  } else {
-    $("#navbar").removeClass("dark-background");
+    $("nav").addClass("white-background");
+    $(".nav-link").removeClass("nav-item-white");
     $(".nav-link").addClass("nav-item-black");
-     $(".nav-link").removeClass("nav-item-white");
+  } else {
+    $("nav").removeClass("white-background");
+    $(".nav-link").addClass("nav-item-white");
+     $(".nav-link").removeClass("nav-item-black");
   }
 };
 //  ---------- Credit to w3schools.com -----------//

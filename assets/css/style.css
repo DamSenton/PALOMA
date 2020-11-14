@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: rgb(24, 24, 24) !important;
   color: #fafafa;
+  z-index: 0;
 }
 
 h2 {
@@ -24,23 +25,23 @@ p {
   }
 }
 
+a {
+  color: #fafafa;
+}
 
 
 /*----------------------- NAV BAR -------------------------- */
 
-.navbar {
-  position: relative;
+.nav {
+  position: absolute;
   text-decoration: none;
   list-style: none;
   font-size: 1.2rem;
   padding: 0;
   margin: 0;
   transition: top 0.8s;
-}
-
-.dark-background {
- 
-  background-color: white;
+  overflow: hidden;
+  z-index: 1 !important;
 }
 
 .sticky {
@@ -49,7 +50,6 @@ p {
 }
 
 .nav a {
-
   padding: 0 !important;
   margin-right: 15px;
   margin-top: 10px;
@@ -63,33 +63,56 @@ p {
   padding: 0;
   font-family: "Reem Kufi", sans-serif;
   line-height: 25px;
+  margin-right: 15px;
 }
 
 .nav-link {
   padding-left: 0 !important;
+  color: #fafafa;
 }
 
-nav li a:hover {
+.nav-link:hover{
+  color: #c9c9c9;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-.navbar-toggler-icon {
-  color: #fafafa !important;
+#nav-toggler{
+  color: #fafafa;
+  border: none;
 }
 
 .hide.nav {
   display: none;
 }
 
-.nav-item-white{
-    color: black !important;
-
+.nav-item-white {
+  color: #fafafa !important;
 }
 
-.nav-item-black{
-    color: #fafafa !important;
-
+.nav-item-white:hover {
+  color: #c9c9c9 !important;
+  margin-bottom: 0;
 }
 
+.nav-item-black {
+  color: black !important;
+  
+}
+
+.nav-item-black:hover {
+  color: rgb(63, 63, 63) !important;
+  border-bottom: solid 1px rgb(63, 63, 63);
+  margin-bottom: 0;
+}
+
+.white-background {
+  background-color: white;
+  
+}
+
+.dark-background{
+    background-color: black;
+    padding: 0;
+}
 
 /*-------------------------- Hero Image ----------------------- */
 
@@ -214,6 +237,21 @@ nav li a:hover {
   margin: 25px;
   font-size: 1.5vmax;
   display: block;
+}
+
+#modal-button {
+  font-size: 1.5vmax !important;
+  background-color: #666666 !important;
+  border: none !important;
+  color: #fafafa !important;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#modal-button:hover {
+  background-color: #3a3a3a !important;
+  border: none !important;
+  color: #fafafa !important;
 }
 
 /*------------------------- Block Dividers ------------------*/
@@ -534,4 +572,35 @@ div#bar-map {
     font-size: 1vmax;
     margin-bottom: 0 !important;
   }
+}
+
+
+/*------------------------ Modals --------------------- */
+.modal-form,
+.modal-body {
+  padding: 0 10px 0 15px;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+
+.modal-body p{
+    margin-bottom: 0;
+}
+
+.modal-form label{
+    padding-bottom: 10px;
+}
+
+.modal-content{
+    font-family: 'Reem-Kufi', sans-serif;
+    background-color: #fafafa  !important;
+    padding: 15px;
+    color: black;
+}
+
+.form-control{
+    margin-bottom: 25px;
+    color: black;
 }
