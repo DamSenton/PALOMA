@@ -7,6 +7,13 @@ function sendMail(contactForm) {
     "guests": contactForm.guests.value
 
   })
+  .then(
+        function(response){
+            console.log("SUCCESS", response);
+        },
+        function(error){
+            console.log("FAILED", error);
+        });
 
   return false;
 }

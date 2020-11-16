@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	<script type="text/javascript" src="assets/scripts/jQuery/jquery-3.5.1.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
@@ -12,18 +12,18 @@
 	</script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-	<script type="text/javascript" src="assets/scripts/jQuery/jquery-3.5.1.js"></script>
+	<script src="assets/scripts/nav-bar-hide.js"></script>
 	<script type="text/javascript" src="assets/scripts/drink-matcher.js"></script>
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<title>PALOMA</title>
 </head>
 
 <body>
-<header class="nav">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12" id="navbar">
-        <a class="nav-link nav-logo" href="index.html">PALOMA</a>
+	<header class="nav">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12" id="navbar">
+			<a class="nav-link nav-logo" href="index.html">PALOMA</a>
 
-        <button
+			<button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -32,23 +32,93 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" id="nav-toggler"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="booking-form.html">Book Now</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="booking-form.html">Book Now</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section class="drink-matcher">
+
+
+		<div class="container">
+			<div class="row">
+				<form id="drink-matcher-form">
+					<div class="form-group form-check flavour-questions">
+                   
+						<input type="checkbox" class="form-check-input flavour-input" id="flavour-sweet">
+						<label class="form-check-label" for="flavour-sweet">Sweet</label>
+						<input type="checkbox" class="form-check-input flavour-input" id="flavour-fruity">
+						<label class="form-check-label" for="flavour-fruity">Fruity</label>
+						<input type="checkbox" class="form-check-input flavour-input" id="flavour-bitter">
+						<label class="form-check-label" for="flavour-bitter">Bitter</label>
+					
+					</div>
+					<div class="form-group form-check spirit-questions">
+                   
+						<input type="checkbox" class="form-check-input sprit-input" id="spirit-gin">
+						<label class="form-check-label" for="spirit-gin">Gin</label>
+						<input type="checkbox" class="form-check-input sprit-input" id="spirit-rum">
+						<label class="form-check-label" for="spirit-rum">Rum</label>
+						<input type="checkbox" class="form-check-input sprit-input" id="spirit-vodka">
+						<label class="form-check-label" for="spirit-vodka">Vodka</label>
+						<input type="checkbox" class="form-check-input sprit-input" id="spirit-tequila">
+						<label class="form-check-label" for="spirit-tequila">Tequila</label>
+						<input type="checkbox" class="form-check-input sprit-input" id="spirit-liqueur">
+						<label class="form-check-label" for="spirit-liqueur">Liqueur</label>
+					</div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+					
+				</form>
+
+			</div>
+		</div>
+	</section>
+    <hr class="block-divider">
+	<section class="drink-result">
+		<div class="container"></div>
+	</section>
+	<footer class="mt-auto py-3">
+		<div class="footer-container">
+			<ul class="social-media">
+				<li>
+					<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				</li>
+				<li>
+					<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				</li>
+				<li>
+					<a href="https://uk.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<p>
+				<small>
+            Copyright Samuel Denton @ The Coding Institute © 2019-2020
+          </small>
+			</p>
+		</div>
+	</footer>
 </body>
 
 </html>

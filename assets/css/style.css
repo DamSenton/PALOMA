@@ -28,8 +28,6 @@ p {
 a {
   color: #fafafa;
 }
-
-
 /*----------------------- NAV BAR -------------------------- */
 
 .nav {
@@ -71,11 +69,11 @@ a {
   color: #fafafa;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #c9c9c9;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-#nav-toggler{
+#nav-toggler {
   color: #fafafa;
   border: none;
 }
@@ -95,7 +93,6 @@ a {
 
 .nav-item-black {
   color: black !important;
-  
 }
 
 .nav-item-black:hover {
@@ -106,12 +103,11 @@ a {
 
 .white-background {
   background-color: white;
-  
 }
 
-.dark-background{
-    background-color: black;
-    padding: 0;
+.dark-background {
+  background-color: black;
+  padding: 0;
 }
 
 /*-------------------------- Hero Image ----------------------- */
@@ -254,18 +250,49 @@ a {
   color: #fafafa !important;
 }
 
-#menu-info-button{
-   font-size: 1.5vmax !important;
+#menu-info-button {
+  font-size: 1.5vmax !important;
   background-color: #666666 !important;
   border: none !important;
   color: #fafafa !important;
-  font-family: "Montserrat", sans-serif; 
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar-toggler{
-border: none !important;
+.navbar-toggler {
+  border: none !important;
 }
 
+.matcher-button {
+  font-size: 1.5vmax;
+  background-color: #f3f3f3;
+  border: none;
+  color: #4b4b4b;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  margin: 15px;
+  height: 15vh;
+  width: 15vw;
+}
+
+@media screen and (max-width: 800px) {
+  .matcher-button {
+    font-size: 1.5vmax !important;
+    background-color: #f3f3f3 !important;
+    border: none !important;
+    color: #4b4b4b !important;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+    height: 15vh;
+    width: 20vw;
+  }
+}
+
+.matcher-button:hover {
+  background-color: #3a3a3a !important;
+  border: none !important;
+  color: #fafafa !important;
+}
 
 /*------------------------- Block Dividers ------------------*/
 
@@ -587,33 +614,129 @@ div#bar-map {
   }
 }
 
-
 /*------------------------ Modals --------------------- */
 .modal-form,
 .modal-body {
   padding: 0 10px 0 15px;
 }
 
-.modal-header{
-    border-bottom: none !important;
+.modal-header {
+  border-bottom: none !important;
 }
 
-.modal-body p{
-    margin-bottom: 0;
+.modal-body p {
+  margin-bottom: 0;
 }
 
-.modal-form label{
-    padding-bottom: 10px;
+.modal-form label {
+  padding-bottom: 10px;
 }
 
-.modal-content{
-    font-family: 'Reem-Kufi', sans-serif;
-    background-color: #fafafa  !important;
+.modal-content {
+  font-family: "Reem-Kufi", sans-serif;
+  background-color: #fafafa !important;
+  padding: 15px;
+  color: black;
+}
+
+.form-control {
+  margin-bottom: 25px;
+  color: black;
+}
+
+/*-------------------------- Drink Matcher ----------------------- */
+
+.drink-matcher {
+  background-color: #fafafa;
+  top: 60px;
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80rem;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+.drink-matcher {
+  background-color: #fafafa;
+  top: 60px;
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+  max-width: 80rem;
+  margin-top: 60px;
+  
+  padding: 1rem;
+  text-align: center;
+}
+}
+
+.drink-result {
+  width: 40vw;
+  height: 60vh;
+  background-color: #fafafa;
+  border: solid 3px black;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .drink-result {
+    width: 80vw;
+    height: 40vh;
+    background-color: #fafafa;
+    border: solid 3px black;
+    margin: 0 auto;
+  }
+}
+
+.flavour-questions {
+  position: relative;
+  contain: content;
+  overflow: hidden;
+  word-spacing: 2rem;
+  display: inline-block;
+  padding: 5rem;
+  width: 80vw;
+  height: 15vh;
+  background-color: black;
+  font-size: 3vmax;
+  text-align: center;
+  justify-content: space-around;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 800px) {
+  .flavour-questions {
     padding: 15px;
-    color: black;
+    font-size: 2.5vmax;
+  }
 }
 
-.form-control{
-    margin-bottom: 25px;
-    color: black;
+.spirit-questions {
+  margin-top: 20px;
+  position: relative;
+  word-spacing: 2rem;
+  display: inline-block;
+  padding: 5rem;
+  width: 80vw;
+  height: 20vh;
+  background-color: black;
+  font-size: 3vmax;
+  text-align: center;
+  justify-content: space-around;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 800px) {
+  .spirit-questions {
+    padding: 20px;
+  }
 }
