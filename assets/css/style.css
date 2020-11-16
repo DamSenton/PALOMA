@@ -655,9 +655,9 @@ div#bar-map {
   justify-content: space-around;
   align-items: center;
   max-width: 80rem;
+  margin: 0 auto;
   margin-top: 60px;
-  margin-left: 20px;
-  margin-right: 20px;
+
   padding: 2rem;
   text-align: center;
 }
@@ -673,7 +673,6 @@ div#bar-map {
   align-items: center;
   max-width: 80rem;
   margin-top: 60px;
-  
   padding: 1rem;
   text-align: center;
 }
@@ -704,7 +703,7 @@ div#bar-map {
   word-spacing: 2rem;
   display: inline-block;
   padding: 5rem;
-  width: 80vw;
+  width: 70vw;
   height: 15vh;
   background-color: black;
   font-size: 3vmax;
@@ -726,17 +725,58 @@ div#bar-map {
   word-spacing: 2rem;
   display: inline-block;
   padding: 5rem;
-  width: 80vw;
+  width: 70vw;
   height: 20vh;
   background-color: black;
   font-size: 3vmax;
   text-align: center;
   justify-content: space-around;
   color: #fafafa;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
   .spirit-questions {
     padding: 20px;
   }
+}
+
+.apple-pie-result{
+
+}
+
+.zombie-result{
+background-image: url =("assets/css/menu-images/zombie-cocktail.jpg");
+}
+
+.tommy-result{
+
+}
+
+.bit-of-me-result{
+
+}
+
+.paloma-result{
+
+}
+
+.bueno-result{
+
+}
+
+.rude-boy-result{
+
+}
+
+.russian-result{
+
+}
+
+.daiquiri-result{
+
+}
+
+.negroni-result{
+
 }
