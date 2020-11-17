@@ -294,6 +294,38 @@ a {
   color: #fafafa !important;
 }
 
+.quiz-button{
+     font-size: 1.5vmax;
+  background-color: #f3f3f3;
+  border: none;
+  color: #4b4b4b;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  margin: 15px;
+  height: 10vh;
+  width: 10vw;
+}
+
+@media screen and (max-width: 800px) {
+  .quiz-button {
+    font-size: 1.5vmax;
+    background-color: #f3f3f3;
+    border: none;
+    color: #4b4b4b;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
+    height: 5vh;
+    width: 20vw;
+  }
+}
+
+.quiz-button:hover {
+  background-color: #3a3a3a !important;
+  border: none !important;
+  color: #fafafa !important;
+}
+
 /*------------------------- Block Dividers ------------------*/
 
 .block-divider {
@@ -653,6 +685,28 @@ div#bar-map {
 }
 
 /*-------------------------- Drink Matcher ----------------------- */
+
+.to-quiz{
+    justify-content:space-around;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    max-width: 90%;
+    height: 30vh;
+    background-color:  black;
+}
+
+@media screen and (max-width: 800px) {
+.to-quiz{
+    justify-content:space-around;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    max-width: 90%;
+    height: 20vh;
+    background-color:  black;
+}
+}
 
 .matcher-quiz {
   color: #fafafa;
