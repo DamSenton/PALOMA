@@ -18,7 +18,7 @@
 	<title>PALOMA</title>
 </head>
 
-<body>
+<body class="h-100">
 	<header class="nav">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12" id="navbar">
 			<a class="nav-link nav-logo" href="index.html">PALOMA</a>
@@ -51,11 +51,13 @@
 	</header>
 
 	<section class="drink-matcher">
+<div class="matcher-quiz">
+<h2>Can't decide on a drink?</h2>
+<p>Answer these two simple questions to match you to your preference!</p>
 
 
-		<div class="container">
-			<div class="row">
-				<form id="drink-matcher-form">
+		
+				<form class="matcher-form" id="drink-matcher-form">
 					<div class="form-group form-check flavour-questions">
                    
 						<input type="checkbox" class="form-check-input flavour-input" id="flavour-sweet">
@@ -69,25 +71,24 @@
 					<div class="form-group form-check spirit-questions">
                    
 						<input type="checkbox" class="form-check-input sprit-input" id="spirit-gin">
-						<label class="form-check-label" for="spirit-gin">Gin</label>
+						<label class="form-check-label sprit-input" for="spirit-gin">Gin</label>
 						<input type="checkbox" class="form-check-input sprit-input" id="spirit-rum">
-						<label class="form-check-label" for="spirit-rum">Rum</label>
+						<label class="form-check-label sprit-input" for="spirit-rum">Rum</label>
 						<input type="checkbox" class="form-check-input sprit-input" id="spirit-vodka">
-						<label class="form-check-label" for="spirit-vodka">Vodka</label>
+						<label class="form-check-label sprit-input" for="spirit-vodka">Vodka</label>
 						<input type="checkbox" class="form-check-input sprit-input" id="spirit-tequila">
-						<label class="form-check-label" for="spirit-tequila">Tequila</label>
+						<label class="form-check-label sprit-input" for="spirit-tequila">Tequila</label>
 						<input type="checkbox" class="form-check-input sprit-input" id="spirit-liqueur">
-						<label class="form-check-label" for="spirit-liqueur">Liqueur</label>
+						<label class="form-check-label sprit-input" for="spirit-liqueur">Liqueur</label>
 					</div>
-
+<div class="matcher-button">
                     <button type="submit" class="btn btn-primary" id="matcher-button">Submit</button>
-					
+					</div>
 				</form>
-
-			</div>
-		</div>
+</div>
+			
 	</section>
-    <hr class="block-divider">
+    <hr class="matcher-block-divider">
 	<section class="drink-result">
 		<div class="container"></div>
 	</section>
