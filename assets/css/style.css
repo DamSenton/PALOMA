@@ -294,8 +294,8 @@ a {
   color: #fafafa !important;
 }
 
-.quiz-button{
-     font-size: 1.5vmax;
+.quiz-button {
+  font-size: 1.5vmax;
   background-color: #f3f3f3;
   border: none;
   color: #4b4b4b;
@@ -304,6 +304,7 @@ a {
   margin: 15px;
   height: 10vh;
   width: 10vw;
+  position: absolute;
 }
 
 @media screen and (max-width: 800px) {
@@ -321,9 +322,9 @@ a {
 }
 
 .quiz-button:hover {
-  background-color: #3a3a3a !important;
-  border: none !important;
-  color: #fafafa !important;
+  background-color: #3a3a3a ;
+  border: none;
+  color: #fafafa;
 }
 
 /*------------------------- Block Dividers ------------------*/
@@ -686,26 +687,26 @@ div#bar-map {
 
 /*-------------------------- Drink Matcher ----------------------- */
 
-.to-quiz{
-    justify-content:space-around;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0;
-    max-width: 90%;
-    height: 30vh;
-    background-color:  black;
+.to-quiz {
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  max-width: 90%;
+  height: 30vh;
+  background-color: black;
 }
 
 @media screen and (max-width: 800px) {
-.to-quiz{
-    justify-content:space-around;
+  .to-quiz {
+    justify-content: space-around;
     margin: 0 auto;
     text-align: center;
     padding: 0;
     max-width: 90%;
     height: 20vh;
-    background-color:  black;
-}
+    background-color: black;
+  }
 }
 
 .matcher-quiz {
@@ -718,24 +719,24 @@ div#bar-map {
 }
 
 @media screen and (max-width: 800px) {
-.matcher-quiz {
-  color: #fafafa;
-  margin-top: 60px;
-  text-align: center;
-  contain: content;
-  overflow: hidden;
-  align-items: center;
-}
+  .matcher-quiz {
+    color: #fafafa;
+    margin-top: 60px;
+    text-align: center;
+    contain: content;
+    overflow: hidden;
+    align-items: center;
+  }
 }
 
 .drink-matcher {
   margin-bottom: 20px;
-    justify-content: space-around;
-    top: 60px;
-    width: 100%;
-    height: 70vh;
-    align-items: center;
-    text-align: center;
+  justify-content: space-around;
+  top: 60px;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -761,22 +762,21 @@ div#bar-map {
   height: 70vh;
 }
 
-label, label>input{
-    font-size: 20px;
-    display: inline-block;
-    margin: 0;
-    line-height: 28px;
-    height: 28px;
-    vertical-align: top;
+label,
+label > input {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: top;
 }
 
 /*---------------------- https://stackoverflow.com/questions/13509883/how-to-vertically-align-a-html-radio-button-to-its-label ------ */
 
-
 .drink-result {
   width: 40vw;
   height: 60vh;
-  background-color: #fafafa;
   border: solid 3px black;
   margin: 0 auto;
   margin-top: 30px;
@@ -784,11 +784,14 @@ label, label>input{
   bottom: 0;
 }
 
+#drink-result-submit{
+}  
+
 @media screen and (max-width: 800px) {
   .drink-result {
     width: 80vw;
     height: 40vh;
-    background-color: #fafafa;
+    background-color: black;
     border: solid 3px black;
     margin: 0 auto;
   }
@@ -841,58 +844,157 @@ label, label>input{
   }
 }
 
-.sprit-input{
-    margin-right: 30px;
+.sprit-input {
+  margin-right: 30px;
 }
 
 .apple-pie-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/apple-pie-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .zombie-result {
-  background-color: black;
+ background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/zombie-cocktail.jpg") center center
+    no-repeat !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 10000000 !important;
 }
 
 .tommy-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/tommys-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .bit-of-me-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/bit-of-me-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .paloma-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/paloma-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .bueno-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/bueno-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .rude-boy-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/rude-boy-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .russian-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/russian-spring-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .daiquiri-result {
-    background-color: black;
+  background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/strawberry-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .negroni-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/negroni-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.rum-sour-result{
-
+.rum-sour-result {
+    background: url("") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.vodka-sour-result{
-
+.vodka-sour-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/vodka-sour-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.gin-fizz-result{
-
+.gin-fizz-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/gin-fizz-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.yuzu-result{
-
+.yuzu-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/yuzu-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.americano-result{
-    
+.americano-result {
+    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/americano-cocktail.jpg") center center
+    no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }

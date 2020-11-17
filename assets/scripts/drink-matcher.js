@@ -33,10 +33,10 @@ function drinkMatcher() {
   /*----------------- Rum Results -------------- */
 
   if (flavourSweet == true && spiritRum == true) {
-    $("#drink-result-submit").addClass(".zombie-result");
+    $("#drink-result-submit").addClass(".zombie-result").removeClass(".result-background");
   }
   setTimeout(function(){
-    $("#drink-result-submit").removeClass(".zombie-result");
+    $("#drink-result-submit").addClass(".result-background").removeClass(".zombie-result");
   }, 3000);
   {
   }
