@@ -1,31 +1,177 @@
 document
-  .getElementById("#matcher-button")
+  .getElementById("matcher-button")
   .addEventListener("click", drinkMatcher);
+
 function drinkMatcher() {
-  var flavourSweet = document.getElementById("#flavour-sweet").checked;
+  var flavourSweet = document.getElementById("flavour-sweet").checked;
+  console.log(flavourSweet);
 
-  var flavourBitter = document.getElementById("#flavour-bitter").checked;
+  var flavourBitter = document.getElementById("flavour-bitter").checked;
+  console.log(flavourBitter);
 
-  var flavourFruity = document.getElementById("#flavour-fruity").checked;
+  var flavourFruity = document.getElementById("flavour-fruity").checked;
+  console.log(flavourFruity);
 
   var spiritRum = document.getElementById("spirit-rum").checked;
+  console.log(spiritRum);
 
   var spiritVodka = document.getElementById("spirit-vodka").checked;
+  console.log(spiritVodka);
 
   var spiritTequila = document.getElementById("spirit-tequila").checked;
+  console.log(spiritTequila);
 
   var spiritLiqueur = document.getElementById("spirit-liqueur").checked;
+  console.log(spiritLiqueur);
 
   var spiritGin = document.getElementById("spirit-gin").checked;
+  console.log(spiritGin);
 
-  var drinkResult = document.getElementById(".drink-result");
+  var drinkResult = document.getElementsByClassName("drink-result");
+  console.log(drinkResult);
 
-  if (flavourSweet == checked && spiritRum == checked) {
-    $(".drink-result").addClass(".zombie-result");
+  /*----------------- Rum Results -------------- */
+
+  if (flavourSweet == true && spiritRum == true) {
+    $("#drink-result-submit").addClass(".zombie-result");
+  }
+  setTimeout(function(){
+    $("#drink-result-submit").removeClass(".zombie-result");
+  }, 3000);
+  {
+  }
+
+ if (flavourFruity == true && spiritRum == true) {
+    $("#drink-result-submit").addClass(".daiquiri-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".daiquiri-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourBitter == true && spiritRum == true) {
+    $("#drink-result-submit").addClass(".rum-sour-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".rum-sour-result");
+  }, 3000);
+  {
+  }
+
+  /*----------------- Gin Results -------------- */
+
+  if (flavourSweet == true && spiritGin == true) {
+    $("#drink-result-submit").addClass(".gin-fizz-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".gin-fizz-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourFruity == true && spiritGin == true) {
+    $("#drink-result-submit").addClass(".bit-of-me-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".bit-of-me-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourBitter == true && spiritGin == true) {
+    $("#drink-result-submit").addClass(".negroni-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".negroni-result");
+  }, 3000);
+  {
+  }
+
+  /*----------------- Vodka Results -------------- */
+
+ if (flavourSweet == true && spiritVodka == true) {
+    $("#drink-result-submit").addClass(".russian-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".russian-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourFruity == true && spiritVodka == true) {
+    $("#drink-result-submit").addClass(".rude-boy-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".rude-boy-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourBitter == true && spiritVodka == true) {
+    $("#drink-result-submit").addClass(".vodka-sour-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".vodka-sour-result");
+  }, 3000);
+  {
+  }
+
+  /*----------------- Liqueur Results -------------- */
+
+  if (flavourSweet == true && spiritLiqueur == true) {
+    $("#drink-result-submit").addClass(".bueno-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".bueno-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourFruity == true && spiritLiqueur == true) {
+    $("#drink-result-submit").addClass(".yuzu-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".yuzu-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourBitter == true && spiritLiqueur == true) {
+    $("#drink-result-submit").addClass(".americano-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".americano-result");
+  }, 3000);
+  {
+  }
+
+  /*----------------- Tequila Results -------------- */
+
+  if (flavourSweet == true && spiritTequila == true) {
+    $("#drink-result-submit").addClass(".apple-pie-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".apple-pie-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourFruity == true && spiritTequila == true) {
+    $("#drink-result-submit").addClass(".paloma-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".paloma-result");
+  }, 3000);
+  {
+  }
+
+  if (flavourBitter == true && spiritTequila == true) {
+    $("#drink-result-submit").addClass(".tommy-result");
+  }
+  setTimeout(function () {
+    $("#drink-result-submit").removeClass(".tommy-result");
+  }, 3000);
+  {
   }
 }
-
-// function drinkMatcher(){
-// if("#flavour-sweet".checked && "#spirit-rum".checked){
-//    document.getElementsByClassName(".drink-result").addClass(".zombie-result")
-// }

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 	<script src="assets/scripts/nav-bar-hide.js"></script>
-	<script type="text/javascript" src="assets/scripts/drink-matcher.js"></script>
+	
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<title>PALOMA</title>
 </head>
@@ -82,7 +82,7 @@
 						<label class="form-check-label sprit-input" for="spirit-liqueur">Liqueur</label>
 					</div>
 <div class="matcher-button">
-                    <button type="submit" class="btn btn-primary" id="matcher-button">Submit</button>
+                    <a class="btn btn-primary" id="matcher-button">Submit</a>
 					</div>
 				</form>
 </div>
@@ -90,7 +90,7 @@
 	</section>
     <hr class="matcher-block-divider">
 	<section class="drink-result">
-		<div class="container"></div>
+		<div class="container" id="drink-result-submit"></div>
 	</section>
 	<footer class="mt-auto py-3">
 		<div class="footer-container">
@@ -120,6 +120,7 @@
 			</p>
 		</div>
 	</footer>
+    <script type="text/javascript" src="assets/scripts/drink-matcher.js"></script>
 </body>
 
 </html>

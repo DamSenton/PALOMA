@@ -849,7 +849,7 @@ label, label>input{
 }
 
 .zombie-result {
-  background-image: url =("assets/css/menu-images/zombie-cocktail.jpg");
+  background-color: black;
 }
 
 .tommy-result {
@@ -871,7 +871,28 @@ label, label>input{
 }
 
 .daiquiri-result {
+    background-color: black;
 }
 
 .negroni-result {
+}
+
+.rum-sour-result{
+
+}
+
+.vodka-sour-result{
+
+}
+
+.gin-fizz-result{
+
+}
+
+.yuzu-result{
+
+}
+
+.americano-result{
+    
 }
