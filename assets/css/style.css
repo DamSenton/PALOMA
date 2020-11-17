@@ -284,7 +284,8 @@ a {
     font-family: "Montserrat", sans-serif;
     margin: 10px;
     height: 5vh;
-    width: 20vw;
+    width: 25vw;
+    text-align: center;
   }
 }
 
@@ -304,7 +305,7 @@ a {
   margin: 15px;
   height: 10vh;
   width: 10vw;
-  position: absolute;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
@@ -695,6 +696,7 @@ div#bar-map {
   max-width: 90%;
   height: 30vh;
   background-color: black;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -710,6 +712,7 @@ div#bar-map {
 }
 
 .matcher-quiz {
+    padding-top: 20px;
   color: #fafafa;
   margin-top: 60px;
   text-align: center;
@@ -734,9 +737,10 @@ div#bar-map {
   justify-content: space-around;
   top: 60px;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   align-items: center;
   text-align: center;
+  background-color: #272727;
 }
 
 @media screen and (max-width: 800px) {
@@ -745,7 +749,7 @@ div#bar-map {
     justify-content: space-around;
     top: 60px;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     align-items: center;
     text-align: center;
   }
@@ -775,6 +779,7 @@ label > input {
 /*---------------------- https://stackoverflow.com/questions/13509883/how-to-vertically-align-a-html-radio-button-to-its-label ------ */
 
 .drink-result {
+
   width: 40vw;
   height: 60vh;
   border: solid 3px black;
@@ -846,10 +851,16 @@ label > input {
 
 .sprit-input {
   margin-right: 30px;
+  font-size: 2.5vmax;
+}
+
+.flavour-input {
+  margin-right: 30px;
+  font-size: 2.5vmax;
 }
 
 .apple-pie-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/apple-pie-cocktail.jpg") center center
+    background: url("menu-images/apple-pie-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -859,18 +870,18 @@ label > input {
 }
 
 .zombie-result {
- background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/zombie-cocktail.jpg") center center
-    no-repeat !important;
+ background: url("menu-images/zombie-cocktail.jpg") center center
+    no-repeat;
   position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 10000000 !important;
+  
 }
 
 .tommy-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/tommys-cocktail.jpg") center center
+    background: url("menu-images/tommys-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -880,7 +891,7 @@ label > input {
 }
 
 .bit-of-me-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/bit-of-me-cocktail.jpg") center center
+    background: url("menu-images/bit-of-me-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -890,7 +901,7 @@ label > input {
 }
 
 .paloma-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/paloma-cocktail.jpg") center center
+    background: url("menu-images/paloma-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -900,7 +911,7 @@ label > input {
 }
 
 .bueno-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/bueno-cocktail.jpg") center center
+    background: url("menu-images/bueno-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -910,7 +921,7 @@ label > input {
 }
 
 .rude-boy-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/rude-boy-cocktail.jpg") center center
+    background: url("menu-images/rude-boy-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -920,7 +931,7 @@ label > input {
 }
 
 .russian-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/russian-spring-cocktail.jpg") center center
+    background: url("menu-images/russian-spring-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -930,7 +941,7 @@ label > input {
 }
 
 .daiquiri-result {
-  background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/strawberry-cocktail.jpg") center center
+  background: url("menu-images/strawberry-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -940,7 +951,7 @@ label > input {
 }
 
 .negroni-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/negroni-cocktail.jpg") center center
+    background: url("menu-images/negroni-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -950,7 +961,7 @@ label > input {
 }
 
 .rum-sour-result {
-    background: url("") center center
+    background: url("menu-images/rum-sour-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -960,7 +971,7 @@ label > input {
 }
 
 .vodka-sour-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/vodka-sour-cocktail.jpg") center center
+    background: url("menu-images/vodka-sour-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -970,7 +981,7 @@ label > input {
 }
 
 .gin-fizz-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/gin-fizz-cocktail.jpg") center center
+    background: url("menu-images/gin-fizz-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -980,7 +991,7 @@ label > input {
 }
 
 .yuzu-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/yuzu-cocktail.jpg") center center
+    background: url("menu-images/yuzu-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;
@@ -990,7 +1001,7 @@ label > input {
 }
 
 .americano-result {
-    background: url("https://e508089c-4391-415c-9c13-a48ff7722af8.ws-eu01.gitpod.io/mini-browser/workspace/PALOMA/assets/css/menu-images/americano-cocktail.jpg") center center
+    background: url("menu-images/americano-cocktail.jpg") center center
     no-repeat;
   position: relative;
   width: 100%;

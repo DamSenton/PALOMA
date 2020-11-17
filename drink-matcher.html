@@ -18,7 +18,7 @@
 	<title>PALOMA</title>
 </head>
 
-<body class="h-100">
+<body>
 	<header class="nav">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top col-12" id="navbar">
 			<a class="nav-link nav-logo" href="index.html">PALOMA</a>
@@ -61,11 +61,11 @@
 					<div class="form-group form-check flavour-questions">
                    
 						<input type="radio" class="form-check-input flavour-input" id="flavour-sweet" name="flavourRadio">
-						<label class="form-check-label" for="flavour-sweet">Sweet</label>
+						<label class="form-check-label flavour-input" for="flavour-sweet">Sweet</label>
 						<input type="radio" class="form-check-input flavour-input" id="flavour-fruity" name="flavourRadio">
-						<label class="form-check-label" for="flavour-fruity">Fruity</label>
+						<label class="form-check-label flavour-input" for="flavour-fruity">Fruity</label>
 						<input type="radio" class="form-check-input flavour-input" id="flavour-bitter" name="flavourRadio">
-						<label class="form-check-label" for="flavour-bitter">Bitter</label>
+						<label class="form-check-label flavour-input" for="flavour-bitter">Bitter</label>
 					
 					</div>
 					<div class="form-group form-check spirit-questions">
@@ -80,9 +80,10 @@
 						<label class="form-check-label sprit-input" for="spirit-tequila">Tequila</label>
 						<input type="radio" class="form-check-input sprit-input" id="spirit-liqueur" name="spiritRadio">
 						<label class="form-check-label sprit-input" for="spirit-liqueur">Liqueur</label>
-					</div>
+					
+                    </div>
 <div class="matcher-button">
-                    <a class="btn btn-primary" id="matcher-button">Submit</a>
+                    <a class="btn btn-primary" id="matcher-button" href="#drink-result-submit">Submit</a>
 					</div>
 				</form>
 </div>
@@ -90,7 +91,7 @@
 	</section>
    
 	<section class="drink-result">
-		<div id="drink-result-submit">
+		<div id="drink-result-submit" class="result-background">
         </div>
 	</section>
 	<footer class="mt-auto py-3">
