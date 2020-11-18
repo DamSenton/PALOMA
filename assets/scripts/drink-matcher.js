@@ -34,27 +34,33 @@ function drinkMatcher() {
 
   if (flavourSweet == true && spiritRum == true) {
     $("#drink-result-submit").addClass("zombie-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>ZOMBIE</h1>`);
   }
   setTimeout(function(){
     $("#drink-result-submit").addClass("result-background").removeClass("zombie-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
  if (flavourFruity == true && spiritRum == true) {
     $("#drink-result-submit").addClass("daiquiri-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>STRAWBERRY DAIQUIRI</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("daiquiri-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourBitter == true && spiritRum == true) {
     $("#drink-result-submit").addClass("rum-sour-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>RUM SOUR</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("rum-sour-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
@@ -63,9 +69,11 @@ function drinkMatcher() {
 
   if (flavourSweet == true && spiritGin == true) {
     $("#drink-result-submit").addClass("gin-fizz-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>GIN FIZZ</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("gin-fizz-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
@@ -74,18 +82,22 @@ function drinkMatcher() {
 
   if (flavourFruity == true && spiritGin == true) {
     $("#drink-result-submit").addClass("bit-of-me-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>BIT OF ME</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("bit-of-me-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourBitter == true && spiritGin == true) {
     $("#drink-result-submit").addClass("negroni-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>NEGRONI</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("negroni-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
@@ -94,27 +106,33 @@ function drinkMatcher() {
 
  if (flavourSweet == true && spiritVodka == true) {
     $("#drink-result-submit").addClass("russian-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>RUSSIAN SPRING PUNCH</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("russian-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourFruity == true && spiritVodka == true) {
     $("#drink-result-submit").addClass("rude-boy-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>RUDE BOY</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("rude-boy-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourBitter == true && spiritVodka == true) {
     $("#drink-result-submit").addClass("vodka-sour-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>VODKA SOUR</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("vodka-sour-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
@@ -123,27 +141,33 @@ function drinkMatcher() {
 
   if (flavourSweet == true && spiritLiqueur == true) {
     $("#drink-result-submit").addClass("bueno-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>BUENO</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("bueno-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourFruity == true && spiritLiqueur == true) {
     $("#drink-result-submit").addClass("yuzu-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>YUZU SCREWDRIVER</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("yuzu-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourBitter == true && spiritLiqueur == true) {
     $("#drink-result-submit").addClass("americano-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>AMERICANO</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("americano-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
@@ -152,27 +176,33 @@ function drinkMatcher() {
 
   if (flavourSweet == true && spiritTequila == true) {
     $("#drink-result-submit").addClass("apple-pie-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>APPLE PIE</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("apple-pie-result");
+    $(".drink-result").children("h1").remove();    
   }, 3000);
   {
   }
 
   if (flavourFruity == true && spiritTequila == true) {
     $("#drink-result-submit").addClass("paloma-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>PALOMA</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("paloma-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
 
   if (flavourBitter == true && spiritTequila == true) {
     $("#drink-result-submit").addClass("tommy-result").removeClass("result-background");
+    $(".drink-result").append(`<h1>TOMMY'S</h1>`);
   }
   setTimeout(function () {
     $("#drink-result-submit").addClass("result-background").removeClass("tommy-result");
+    $(".drink-result").children("h1").remove();
   }, 3000);
   {
   }
